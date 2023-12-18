@@ -1,16 +1,16 @@
-import modelo.FiguraGeometrica;
+import modelo.Animal;
 
 public class App {
    public static void main(String[] args) throws Exception {
         
         System.out.println("La versión de Java utilizada es: "  + System.getProperty("java.version"));
-        FiguraGeometrica figura = new FiguraGeometrica(3, "triángulo");
-        figura.showInfo();
+        Animal perro = new Animal(4, "perro");
+        perro.showInfo();
 
-        FiguraGeometrica figura2 = new FiguraGeometrica();
-        figura2.setNombre("cuadrado");
-        figura2.setNumLados(4);
-        figura2.showInfo();
+        Animal gallina = new Animal();
+        gallina.setNombre("gallina");
+        gallina.setNumPatas(2);
+        gallina.showInfo();
         
     }
 }
